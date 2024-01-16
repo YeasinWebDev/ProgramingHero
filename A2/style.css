@@ -15,11 +15,17 @@ body {
 
 main {
     padding: 1vw 4vw;
+    height: fit-content;
+}
+
+nav {
+    position: absolute;
 }
 
 nav,
 .nav-right ul,
 .nav-left {
+    position: relative;
     font-style: none;
     display: flex;
     justify-content: space-between;
@@ -48,6 +54,13 @@ nav,
     font-weight: 800;
 }
 
+.nav-right-min i {
+    position: relative;
+    top: -35px;
+    left: 90%;
+    font-size: 25px;
+    display: none;
+}
 
 
 /* hero section  */
@@ -151,6 +164,10 @@ nav,
     background-color: #FF5400;
     color: #fff;
     border: none;
+}
+
+.popular-right img {
+    width: 25vw;
 }
 
 
@@ -659,24 +676,365 @@ nav,
     justify-content: center;
 }
 
-.hero span{
+.hero span {
     color: #FF5400;
 }
 
-.footer-t p{
+.footer-t p {
     padding: 20px 0;
     width: 30%;
     text-align: center;
 }
 
-.icons{
+.icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
-.border{
+
+.border {
     width: 35vw;
     margin: 20px 0;
     border-bottom: 1px solid rgba(128, 128, 128, 0.244);
+}
+
+
+
+@media screen and (min-width:320px) and (max-width:600px) {
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .nav-right-min i {
+        display: block;
+    }
+
+    .nav-left h3 {
+        font-size: 2.5vw;
+    }
+
+    .heroSec {
+        border-radius: 10px;
+        height: 50vw;
+    }
+
+    .heroSec h1 {
+        font-size: 4vw;
+    }
+
+    .heroSec p {
+        font-size: 10px;
+        width: 80%;
+    }
+
+    .btn {
+        flex-direction: column;
+    }
+
+    .btn div {
+        margin-bottom: 10px;
+    }
+
+    .popular {
+        flex-direction: column;
+    }
+
+    .popular-left {
+        width: 100%;
+    }
+
+    .popular-left h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+    }
+
+    .popular-left h4 {
+        text-align: center;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .mid ol li {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .popular-left button {
+        padding: 10px 2vw;
+        margin-bottom: 20px;
+    }
+
+    .popular-right img {
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    .destination .top h1 {
+        font-size: 25px;
+        margin: 20px 0;
+    }
+
+    .destination .top P {
+        font-size: 15px;
+        padding: 0;
+        width: 80%;
+    }
+
+    .img1,
+    .img2,
+    .img3 {
+        height: 60vh;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #newSec {
+        height: 50vh;
+        margin-top: 20vw;
+    }
+
+    .newSec-t h1 {
+        font-size: 3vw;
+    }
+
+    .newSec-t h3 {
+        margin-top: 10px;
+        font-size: 2vw;
+
+    }
+
+    .newSec-m {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .newSec-m-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .newSec-m-left div {
+        width: 100%;
+        font-size: 2vw;
+
+    }
+
+    .newSec-m-right img {
+        width: 100%;
+    }
+
+    .whyUs {
+        height: 50vh;
+        width: 100%;
+        margin-top: 30vw;
+    }
+
+    .whyUs-t h1 {
+        font-size: 4vw;
+    }
+
+    .whyUs-t p {
+        width: 100%;
+        font-size: 2vw;
+        margin-bottom: 0vw;
+
+    }
+
+    .whyUs-m {
+        flex-direction: column;
+        padding: 0;
+
+    }
+
+    .whyUs-m1,
+    .whyUs-m2,
+    .whyUs-b {
+        margin-top: 20px;
+        padding: 10px !important;
+        width: 80vw;
+        height: 25vw;
+    }
+
+    .whyUs-m1 img,
+    .whyUs-m2 img,
+    .whyUs-b img {
+        width: 10%;
+    }
+
+    .whyUs-m1 h4,
+    .whyUs-m2 h4,
+    .whyUs-b h4 {
+        font-size: 2vw;
+        padding: 0.8vw 0;
+
+    }
+
+    .whyUs-m1 p,
+    .whyUs-m2 p,
+    .whyUs-b p {
+        font-size: 10px;
+    }
+
+    .deals {
+        margin-top: 35vw;
+    }
+
+    .deals-t h2 {
+        margin-top: 20px;
+        font-size: 50px;
+    }
+
+    .deals-t p {
+        font-size: 15px;
+        text-align: center;
+        width: 80%;
+    }
+
+    .dealsSub-1-img,
+    .dealsSub-2-img,
+    .dealsSub-3-img {
+        justify-content: center;
+    }
+
+    .dealsSub-1,
+    .dealsSub-2,
+    .dealsSub-3 {
+        width: 80%;
+    }
+
+    .deals-b-sub-t div {
+        font-size: 15px;
+    }
+
+    .deals-b-2 h4 {
+        font-size: 20px;
+    }
+
+    .simple {
+        margin-top: 20vw;
+        flex-direction: column;
+    }
+
+    .simple-left {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .simple-left h1 {
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .simple-mid h4,
+    .simple-mid ol li {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .simple-right {
+        height: 200vw;
+    }
+
+    .simple-right-t h4 {
+        font-size: 15px;
+    }
+
+    .simple-right-b {
+        width: 80%;
+    }
+
+    .contact {
+        flex-direction: column;
+        height: 80vh;
+        padding: 5vw;
+    }
+
+    .contact-t {
+        padding: 30px;
+        margin-top: 20px;
+    }
+
+    .contact-t h3 {
+        font-size: 30px;
+    }
+
+    .contact-t p {
+        font-size: 13px;
+    }
+
+    .contact-b {
+        border-radius: 10px;
+        margin-top: 10px;
+        width: 100%;
+        height: 60vw;
+    }
+
+    .save {
+        top: 22vw;
+        left: 20vw;
+    }
+
+    .save h3 {
+        font-size: 3vw;
+    }
+
+    .save h5 {
+        font-size: 1.3vw;
+    }
+
+    .footer-t {
+        width: 100%;
+        height: 50vh;
+
+    }
+
+    .footer-t p {
+        font-size: 15px;
+        width: 80%;
+
+    }
+
+    .icons {
+        font-size: 20px;
+    }
+
+    .border {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .save {
+        padding: 1.5vw;
+        top: 38vw;
+        left: 26vw;
+    }
+
+    .deals-b-sub-t div{
+        font-size: 10px;
+    }
+
+    .newSec-t{
+        margin-top: 8vw;
+    }
+    .heroSec{
+        height: 40vh;
+    }
+
+    .btn input{
+        padding: 2vw;
+    }
 }
