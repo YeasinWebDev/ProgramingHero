@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+/* .herosec{
+    width: 60vw;
+    background-image: url(./Images/1.png);
+    background-position: center;
+    background-size: cover;
+
+} */

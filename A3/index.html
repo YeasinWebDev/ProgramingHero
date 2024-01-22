@@ -1,17 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+
+<body class="bg-white">
+    <nav>
+        <div class="navbar bg-white text-black">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-52 ">
+                        <li><a class="text-[#FF4240] font-bold">Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-2xl font-bold">Hockey<sup
+                        class="font-bold text-4xl text-[#FF4240]">,</sup>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 lg:text-[18px]">
+                    <li><a class="text-[#FF4240] font-bold">Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <i class="fas fa-search px-3 hidden lg:block"></i>
+                <a class="px-4 py-2 text-white rounded-lg bg-[#FF4240] font-bold ">Get Ticket</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- hero -->
+        <div class="herosec lg:pt-[1vw] lg:px-[10%]  px-[10%] lg:h-[100vh] h-[45vh] items-center mx-auto my-5">
+            <div class="carousel w-full relative">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div
+                        class="absolute flex gap-10  transform lg:translate-y-24  left-5 right-5 top-[70%] justify-center lg:justify-start">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div
+                        class="absolute flex gap-10  transform lg:translate-y-24 left-5 right-5 top-[70%] justify-center lg:justify-start">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:absolute top-[70%] right-60 bg-[#131318] px-4 py-6 rounded-xl lg:w-[30%]">
+                <h1 class="font-bold lg:text-2xl mb-2">Meet all the heroes from the field</h1>
+                <p class="text-[14px]">
+                    "Explore our hockey heroes – skilled athletes, passionate team players, and relentless competitors "
+                </p>
+            </div>
+        </div>
+
+
+        <!-- Professional -->
+
+        <div class="professional px-[10%]">
+            <div class="p-top items-center flex justify-center flex-col text-black">
+                <h1 class="lg:text-[36px] text-[22px] font-bold">Professional Hockeys Club</h1>
+                <p class="lg:text-[16px] text-[14px] text-center lg:w-[50%]">
+                    Join our elite hockey club, where skill meets passion. Experience professional excellence, teamwork, and thrilling victories on the ice.
+                </p>
+            </div>
+
+            <div class="p-b flex lg:flex-row flex-wrap gap-32 mt-20 justify-center">
+                <!-- card 1 -->
+                <div class="demo flex flex-col text-black items-center">
+                    <div class="radial-progress  text-[#FF4240]" style="--value:87;" role="progressbar"><span class="text-black font-bold">87%</span></div>
+                    <h1 class="text-xl font-bold my-2">Prayer Facility</h1>
+                    <p class="text-center">
+                        Serene sanctuary for quiet reflection
+                </div>
+                <!-- card 2 -->
+                <div class="demo flex flex-col text-black items-center">
+                    <div class="radial-progress  text-[#49D293]" style="--value:87;" role="progressbar"><span class="text-black font-bold">95%</span></div>
+                    <h1 class="text-xl font-bold my-2">Experienced Coach</h1>
+                    <p class="text-center">
+                        Guiding triumphs with wisdom.
+                    </p>
+                </div>
+                <!-- card 3 -->
+                <div class="demo flex flex-col text-black items-center">
+                    <div class="radial-progress  text-[#FFB546]" style="--value:87;" role="progressbar"><span class="text-black font-bold">90%</span></div>
+                    <h1 class="text-xl font-bold my-2">Senior Player</h1>
+                    <p class="text-center">
+                        Veteran excelling with skill.
+                </div>
+                <!-- card 4 -->
+                <div class="demo flex flex-col text-black items-center">
+                    <div class="radial-progress  text-[#4C8DF1]" style="--value:87;"  role="progressbar"><span class="text-black font-bold">80%</span></div>
+                    <h1 class="text-xl font-bold my-2">Training Ground</h1>
+                    <p class="text-center">
+                        Nurturing champions, forging excellence.
+                </div>
+                <div class="demo"></div>
+                <div class="demo"></div>
+                <div class="demo"></div>
+            </div>
+        </div>
+
+
+        <!-- program -->
+
+        <div class="program px-[10%] pb-10">
+            <div class="program-top flex flex-col justify-center items-center text-black">
+                <h1 class="lg:text-[36px] text-[22px] font-bold">Program Sections</h1>
+                <p class="lg:text-[16px] text-[14px]">
+                    Diverse programs cater every enthusiast, fostering growth and camaraderie seamlessly
+                </p>
+            </div>
+
+            <div class="program-b lg:px-[8%] -px-8 mt-[5vw] grid lg:grid-cols-2 gap-6 grid-cols-1">
+                <!-- card-1 -->
+                <div class="relative lg:w-[30vw] w-[85vw] image-full">
+                    <figure><img src="./Images/2.png" alt="Shoes" /></figure>
+                    <div class="absolute lg:top-[40%] top-2 left-[10%] flex justify-center flex-col text-white">
+                      <h2 class="card-title font-bold lg:text-[28px] text-[20px]">Junior Program</h2>
+                      <p class="lg:my-5 my-2">
+                        "Nurturing young talent through expert coaching, skill development, and teamwork, our Junior Program fosters passion, growth, and sportsmanship
+                      </p>
+                      <div class="card-actions">
+                        <button class="btn bg-[#FF4240] border-none text-black hover:bg-amber-800 hover:text-white">Register Now!</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- card-2 -->
+                <div class="relative lg:w-[30vw] w-[85vw] image-full ">
+                    <figure><img src="./Images/3.png" alt="Shoes" /></figure>
+                    <div class="absolute lg:top-[40%] top-2 left-[10%] flex justify-center flex-col text-white">
+                      <h2 class="card-title font-bold lg:text-[28px] text-[20px]">Teenager Program</h2>
+                      <p class="lg:my-5 my-2">
+                        "Nurturing young talent through expert coaching, skill development, and teamwork, our Junior Program fosters passion, growth, and sportsmanship
+                      </p>
+                      <div class="card-actions">
+                        <button class="btn bg-[#FF4240] border-none text-black hover:bg-amber-800 hover:text-white">Register Now!</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- card-3 -->
+                <div class=" relative lg:left-0 -left-5 lg:w-[60vw] w-[92vw] image-full ">
+                    <figure><img src="./Images/4.png" alt="Shoes" /></figure>
+                    <div class="absolute lg:top-[50%] top-2 left-[10%] flex justify-center flex-col text-white">
+                      <h2 class="card-title font-bold lg:text-[28px] text-[20px]">Professional Program</h2>
+                      <p class="lg:my-5 my-2 lg:w-[60%]">
+                        "Nurturing young talent through expert coaching, skill development, and teamwork, 
+                      </p>
+                      <div class="card-actions">
+                        <button class="btn bg-[#FF4240] border-none text-black hover:bg-amber-800 hover:text-white">Register Now!</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <!-- new products -->
+        <div class="products">
+            <div class="products-top flex flex-col justify-center items-center text-black">
+                <h1 class="lg:text-[36px] text-[22px] font-bold">Our New Products</h1>
+                <p class="lg:text-[16px] text-[14px]">
+                    Discover innovation and style with our latest, cutting-edge product arrivals.
+                </p>
+            </div>
+
+            <div class="products-b">
+                <!-- card-1  -->
+                <div class="demo flex flex-col lg:flex-row">
+
+                </div>
+            </div>
+        </div>
+    </main>
+
 
 
 
     <script src="https://cdn.tailwindcss.com"></script>
 </body>
+
 </html>
