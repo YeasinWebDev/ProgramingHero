@@ -9,8 +9,58 @@
     <script src="script.js" defer></script>
 </head>
 <body >
-    <nav>
-        
+    <nav class="flex  justify-between p-10 align-middle items-center">
+        <div>
+            <h2 class="font-bold text-4xl">YOYO-Ticket</h2>
+        </div>
+        <div>
+            <ul class="flex justify-between font-semibold">
+                <li>Home</li>
+                <li class="px-4">About</li>
+                <li class="pr-4">Contact</li>
+                <li>Search</li>
+            </ul>
+        </div>
+        <div class="bus border-[1px] border-[#1DD100] flex p-3 rounded-lg">
+            <h3 class="text-[#1DD100] pr-2 font-bold">Bus</h3> <img src="./img/bus-icon.png" alt="">
+        </div>
     </nav>
+
+    <main class="p-10">
+        <div class="hero flex flex-col items-center pt-24 rounded-xl">
+            <h1 class="text-6xl font-bold text-white flex flex-col justify-between items-center pt-10">
+                End-to-End Travel with 
+                <span class="text-[#1DD100]">YOYO Paribahan</span> 
+            </h1>
+            <p class="text-white text-2xl py-6 w-[50%] text-center">
+                Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
+            </p>
+            <button class="bg-[#1DD100] px-3 py-4 rounded-lg font-bold text-2xl">Buy Tickets</button>
+
+            <div class="card flex justify-between align-middle mt-10">
+                <div class="bg-white p-6 flex rounded-xl">
+                    <img src="./img/people.png" alt="">
+                    <div class="sub">
+                        <h1 class="text-2xl font-bold">500k+</h1>
+                        <p>Registered users</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 flex rounded-xl mx-4">
+                    <img src="./img/tabler-icon-ticket.png" alt="">
+                    <div class="sub">
+                        <h1 class="text-2xl font-bold">1.7 lacks</h1>
+                        <p>Tickets sold</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 flex rounded-xl">
+                    <img src="./img/stoppage.png" alt="">
+                    <div class="sub">
+                        <h1 class="text-2xl font-bold">80K+</h1>
+                        <p>Rental partners</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
