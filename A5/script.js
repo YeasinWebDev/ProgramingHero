@@ -90,6 +90,8 @@ function cupon() {
 
 }
 
+cupon()
+
 
 
 next.addEventListener("click", () => {
